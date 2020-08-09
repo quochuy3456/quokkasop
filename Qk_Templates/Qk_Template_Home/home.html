@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+ {% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QuokkaShop</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/all.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/auto_slide.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="{% static 'js/auto_slide.js' %}" charset="utf-8"></script>
+    <style>
+        .bg-1 {
+          background-image: url('{% static 'media/02.jpg' %}');
+          min-height: 100%;
+        }
+
+        .bg-2 {
+          background-image: url('{% static 'media/03.jpg' %}');
+          min-height: 100%;
+        }
+        .full_size{
+            padding: 0;
+            margin: 0;
+        }
+        p{
+            color: #aaa;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="bg-1">
+        <div class="chevron-container">
+            <i class="chevron-down fas fa-chevron-down"></i>
+            <i class="chevron-down fas fa-chevron-down"></i>
+            <i class="chevron-down fas fa-chevron-down"></i>
+        </div>
+        <div class="container-fluid full_size">
+            <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #000;">
+                <a class="navbar-brand" href="#">
+                  <img src="{% static 'media/quokka2.png' %}" width="300" height="100">
+                </a>
+                <form class="form-inline col-5 ml-auto">
+                    <label style="color: #aaa;">
+                        Chuyên giày thể thao nam &diams;&diams;&diams; Sneaker &diams;&diams;&diams; Nhập khẩu Thái Lan
+                    </label>
+                    <input class="form-control mr-sm-3" style="width: 100%;" type="search" placeholder="Search" aria-label="Search">
+                </form>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <p><i class="fa fa-phone"></i> <b>Hotline:</b> 19001234</p>
+                        <p><i class="fa fa-envelope"></i> <b>Hotline:</b> quokkasop.hf@gmail.com</p>
+                    </li>
+                </ul>
+            </nav>
+            <div class="col-6" style="height: 500px; background-color: #345344; overflow: hidden;">
+               <header class="cont-slider">
+                    <section class="slider">
+                      <article class="slide one"><span>One</span></article>
+                      <article class="slide two"><span>Two</span></article>
+                      <article class="slide three"><span>Three</span></article>
+                      <article class="slide four"><span>Four</span></article>
+                      <article class="slide five"><span>Five</span></article>
+                    </section>
+                </header>
+            </div>
+        </div>
+    </div>
+	<div class="paragraph">
+		<p>
+            Khám phá thêm
+		</p>
+	</div>
+	<div class="bg-2">
+
+            <h1 style="color: #fff;">xin chao</h1>
+    </div>
+</body>
+</html>
